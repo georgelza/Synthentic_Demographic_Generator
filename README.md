@@ -59,6 +59,7 @@ Below are some of the data structures used along the way, Aadditionally also see
 
 
 **Adults:**
+```
     Name
     Surname
     Genders
@@ -68,7 +69,7 @@ Below are some of the data structures used along the way, Aadditionally also see
     Marital Status
     Status (Living/Deceased)
     Address
-
+```
 
 **Children:**
 ```
@@ -82,16 +83,18 @@ Below are some of the data structures used along the way, Aadditionally also see
     Address
 ```
 
-```
+
 **Family's:**
+```
     Husband
     Wife
     Kids
     Address
 ```
 
-```
+
 **Addresses:**
+```
     Provinces
         Counties
             Towns/Cities

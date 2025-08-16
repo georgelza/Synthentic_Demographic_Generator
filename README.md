@@ -1,4 +1,4 @@
-## Synthetic Demographic Data Generator.
+# Synthetic Demographic Data Generator.
 
 So ye, this did not start with this, it was more a lets create a couple of people for the local Locale thats more like real people, families (well it was idea out of my Neo4J / GraphDB blog).
 
@@ -28,7 +28,7 @@ GIT REPO: [Synthentic_Demographic_Generator](https://github.com/georgelza/Synthe
 For more detail how to stand up the entire environment see the below **The App:**.
 
 
-**The App:** 
+## The App:
 
 To run the Generator, execute (from root directory):
 

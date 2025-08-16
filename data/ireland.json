@@ -1,0 +1,1448 @@
+{
+  "country": "Republic of Ireland",
+  "population": 5149139,
+  "census_year": 2022,
+  "national_average_age": 38.8,
+  "national_male_population": 2544549,
+  "national_female_population": 2604590,
+  "provinces": [
+    {
+      "name": "Leinster",
+      "population": 2858501,
+      "counties": [
+        {
+          "name": "Dublin",
+          "population": 1458154,
+          "average_age": 36.2,
+          "cities_towns": [
+            {
+              "name": "Dublin City",
+              "population": 592713,
+              "average_age": 36.5,
+              "male_population": 289500,
+              "female_population": 303213,
+              "male_children": 52000,
+              "female_children": 50500,
+              "marital_status_percentages": {
+                "single": 53.2,
+                "married": 35.8,
+                "separated": 3.2,
+                "divorced": 4.1,
+                "widowed": 3.7
+              }
+            },
+            {
+              "name": "Fingal",
+              "population": 329000,
+              "average_age": 34.8,
+              "male_population": 164000,
+              "female_population": 165000,
+              "male_children": 35000,
+              "female_children": 33500,
+              "marital_status_percentages": {
+                "single": 42.1,
+                "married": 47.2,
+                "separated": 2.8,
+                "divorced": 4.3,
+                "widowed": 3.6
+              }
+            },
+            {
+              "name": "South Dublin",
+              "population": 314000,
+              "average_age": 35.2,
+              "male_population": 156000,
+              "female_population": 158000,
+              "male_children": 32500,
+              "female_children": 31000,
+              "marital_status_percentages": {
+                "single": 41.8,
+                "married": 46.9,
+                "separated": 2.9,
+                "divorced": 4.4,
+                "widowed": 4.0
+              }
+            },
+            {
+              "name": "Dún Laoghaire-Rathdown",
+              "population": 218018,
+              "average_age": 38.4,
+              "male_population": 105000,
+              "female_population": 113018,
+              "male_children": 18500,
+              "female_children": 17800,
+              "marital_status_percentages": {
+                "single": 38.2,
+                "married": 48.1,
+                "separated": 3.1,
+                "divorced": 5.2,
+                "widowed": 5.4
+              }
+            },
+            {
+              "name": "Bray",
+              "population": 33512,
+              "average_age": 39.2,
+              "male_population": 16400,
+              "female_population": 17112,
+              "male_children": 3200,
+              "female_children": 3050,
+              "marital_status_percentages": {
+                "single": 39.1,
+                "married": 46.8,
+                "separated": 3.5,
+                "divorced": 5.8,
+                "widowed": 4.8
+              }
+            },
+            {
+              "name": "Balbriggan",
+              "population": 24322,
+              "average_age": 33.4,
+              "male_population": 12000,
+              "female_population": 12322,
+              "male_children": 3200,
+              "female_children": 3100,
+              "marital_status_percentages": {
+                "single": 45.8,
+                "married": 42.3,
+                "separated": 3.1,
+                "divorced": 4.8,
+                "widowed": 4.0
+              }
+            },
+            {
+              "name": "Greystones",
+              "population": 16939,
+              "average_age": 38.8,
+              "male_population": 8300,
+              "female_population": 8639,
+              "male_children": 1800,
+              "female_children": 1750,
+              "marital_status_percentages": {
+                "single": 32.4,
+                "married": 54.2,
+                "separated": 2.8,
+                "divorced": 5.1,
+                "widowed": 5.5
+              }
+            },
+            {
+              "name": "Ashbourne",
+              "population": 15680,
+              "average_age": 32.5,
+              "male_population": 7800,
+              "female_population": 7880,
+              "male_children": 2100,
+              "female_children": 2000,
+              "marital_status_percentages": {
+                "single": 31.8,
+                "married": 58.2,
+                "separated": 2.4,
+                "divorced": 3.8,
+                "widowed": 3.8
+              }
+            },
+            {
+              "name": "Arklow",
+              "population": 13399,
+              "average_age": 38.5,
+              "male_population": 6600,
+              "female_population": 6799,
+              "male_children": 1400,
+              "female_children": 1350,
+              "marital_status_percentages": {
+                "single": 38.2,
+                "married": 47.1,
+                "separated": 3.4,
+                "divorced": 5.8,
+                "widowed": 5.5
+              }
+            },
+            {
+              "name": "Enniscorthy",
+              "population": 12310,
+              "average_age": 38.9,
+              "male_population": 6050,
+              "female_population": 6260,
+              "male_children": 1300,
+              "female_children": 1250,
+              "marital_status_percentages": {
+                "single": 40.5,
+                "married": 45.2,
+                "separated": 3.3,
+                "divorced": 5.4,
+                "widowed": 5.6
+              }
+            }
+          ]
+        },
+        {
+          "name": "Louth",
+          "population": 139703,
+          "average_age": 37.8,
+          "cities_towns": [
+            {
+              "name": "Drogheda",
+              "population": 44135,
+              "average_age": 36.8,
+              "male_population": 21800,
+              "female_population": 22335,
+              "male_children": 4850,
+              "female_children": 4650,
+              "marital_status_percentages": {
+                "single": 44.2,
+                "married": 43.1,
+                "separated": 3.1,
+                "divorced": 5.2,
+                "widowed": 4.4
+              }
+            },
+            {
+              "name": "Dundalk",
+              "population": 43112,
+              "average_age": 37.2,
+              "male_population": 21300,
+              "female_population": 21812,
+              "male_children": 4700,
+              "female_children": 4500,
+              "marital_status_percentages": {
+                "single": 43.8,
+                "married": 42.7,
+                "separated": 3.4,
+                "divorced": 5.1,
+                "widowed": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "name": "Meath",
+          "population": 220826,
+          "average_age": 37.1,
+          "cities_towns": [
+            {
+              "name": "Navan",
+              "population": 33606,
+              "average_age": 36.1,
+              "male_population": 16600,
+              "female_population": 17006,
+              "male_children": 3800,
+              "female_children": 3650,
+              "marital_status_percentages": {
+                "single": 36.3,
+                "married": 50.2,
+                "separated": 2.8,
+                "divorced": 4.2,
+                "widowed": 6.5
+              }
+            },
+            {
+              "name": "Trim",
+              "population": 9194,
+              "average_age": 37.8,
+              "male_population": 4550,
+              "female_population": 4644,
+              "male_children": 1050,
+              "female_children": 1000,
+              "marital_status_percentages": {
+                "single": 34.2,
+                "married": 51.8,
+                "separated": 2.9,
+                "divorced": 4.8,
+                "widowed": 6.3
+              }
+            }
+          ]
+        },
+        {
+          "name": "Wicklow",
+          "population": 154742,
+          "average_age": 38.9,
+          "cities_towns": [
+            {
+              "name": "Wicklow",
+              "population": 10396,
+              "average_age": 39.1,
+              "male_population": 5100,
+              "female_population": 5296,
+              "male_children": 1150,
+              "female_children": 1100,
+              "marital_status_percentages": {
+                "single": 36.8,
+                "married": 49.2,
+                "separated": 3.1,
+                "divorced": 5.4,
+                "widowed": 5.5
+              }
+            },
+            {
+              "name": "Rathdrum",
+              "population": 1751,
+              "average_age": 37.5,
+              "male_population": 865,
+              "female_population": 886,
+              "male_children": 195,
+              "female_children": 185,
+              "marital_status_percentages": {
+                "single": 38.2,
+                "married": 47.1,
+                "separated": 3.2,
+                "divorced": 5.8,
+                "widowed": 5.7
+              }
+            }
+          ]
+        },
+        {
+          "name": "Kildare",
+          "population": 246977,
+          "average_age": 36.8,
+          "cities_towns": [
+            {
+              "name": "Naas",
+              "population": 25074,
+              "average_age": 35.8,
+              "male_population": 12400,
+              "female_population": 12674,
+              "male_children": 2800,
+              "female_children": 2700,
+              "marital_status_percentages": {
+                "single": 36.3,
+                "married": 50.2,
+                "separated": 2.8,
+                "divorced": 4.2,
+                "widowed": 6.5
+              }
+            },
+            {
+              "name": "Celbridge",
+              "population": 20601,
+              "average_age": 34.2,
+              "male_population": 10200,
+              "female_population": 10401,
+              "male_children": 2800,
+              "female_children": 2700,
+              "marital_status_percentages": {
+                "single": 35.1,
+                "married": 52.4,
+                "separated": 2.6,
+                "divorced": 4.1,
+                "widowed": 5.8
+              }
+            },
+            {
+              "name": "Leixlip",
+              "population": 16504,
+              "average_age": 35.5,
+              "male_population": 8150,
+              "female_population": 8354,
+              "male_children": 1850,
+              "female_children": 1780,
+              "marital_status_percentages": {
+                "single": 34.6,
+                "married": 52.8,
+                "separated": 2.7,
+                "divorced": 4.3,
+                "widowed": 5.6
+              }
+            },
+            {
+              "name": "Maynooth",
+              "population": 15962,
+              "average_age": 30.2,
+              "male_population": 7890,
+              "female_population": 8072,
+              "male_children": 1800,
+              "female_children": 1720,
+              "marital_status_percentages": {
+                "single": 58.4,
+                "married": 32.1,
+                "separated": 2.1,
+                "divorced": 3.8,
+                "widowed": 3.6
+              }
+            },
+            {
+              "name": "Newbridge",
+              "population": 14312,
+              "average_age": 36.1,
+              "male_population": 7050,
+              "female_population": 7262,
+              "male_children": 1600,
+              "female_children": 1540,
+              "marital_status_percentages": {
+                "single": 37.2,
+                "married": 49.8,
+                "separated": 2.9,
+                "divorced": 4.7,
+                "widowed": 5.4
+              }
+            }
+          ]
+        },
+        {
+          "name": "Kilkenny",
+          "population": 103685,
+          "average_age": 39.2,
+          "cities_towns": [
+            {
+              "name": "Kilkenny",
+              "population": 26512,
+              "average_age": 39.1,
+              "male_population": 13000,
+              "female_population": 13512,
+              "male_children": 2800,
+              "female_children": 2700,
+              "marital_status_percentages": {
+                "single": 40.8,
+                "married": 44.7,
+                "separated": 3.1,
+                "divorced": 5.2,
+                "widowed": 6.2
+              }
+            },
+            {
+              "name": "Callan",
+              "population": 2475,
+              "average_age": 40.5,
+              "male_population": 1220,
+              "female_population": 1255,
+              "male_children": 275,
+              "female_children": 260,
+              "marital_status_percentages": {
+                "single": 35.8,
+                "married": 48.2,
+                "separated": 3.4,
+                "divorced": 6.1,
+                "widowed": 6.5
+              }
+            }
+          ]
+        },
+        {
+          "name": "Carlow",
+          "population": 61968,
+          "average_age": 38.1,
+          "cities_towns": [
+            {
+              "name": "Carlow",
+              "population": 27351,
+              "average_age": 37.8,
+              "male_population": 13500,
+              "female_population": 13851,
+              "male_children": 2900,
+              "female_children": 2800,
+              "marital_status_percentages": {
+                "single": 41.5,
+                "married": 44.2,
+                "separated": 3.2,
+                "divorced": 5.4,
+                "widowed": 5.7
+              }
+            },
+            {
+              "name": "Tullow",
+              "population": 4673,
+              "average_age": 38.9,
+              "male_population": 2300,
+              "female_population": 2373,
+              "male_children": 520,
+              "female_children": 495,
+              "marital_status_percentages": {
+                "single": 38.2,
+                "married": 46.8,
+                "separated": 3.5,
+                "divorced": 5.8,
+                "widowed": 5.7
+              }
+            }
+          ]
+        },
+        {
+          "name": "Laois",
+          "population": 91657,
+          "average_age": 37.5,
+          "cities_towns": [
+            {
+              "name": "Portlaoise",
+              "population": 23362,
+              "average_age": 36.8,
+              "male_population": 11550,
+              "female_population": 11812,
+              "male_children": 2650,
+              "female_children": 2550,
+              "marital_status_percentages": {
+                "single": 40.1,
+                "married": 46.2,
+                "separated": 3.1,
+                "divorced": 5.4,
+                "widowed": 5.2
+              }
+            },
+            {
+              "name": "Mountmellick",
+              "population": 3950,
+              "average_age": 38.2,
+              "male_population": 1950,
+              "female_population": 2000,
+              "male_children": 445,
+              "female_children": 425,
+              "marital_status_percentages": {
+                "single": 37.8,
+                "married": 47.5,
+                "separated": 3.2,
+                "divorced": 5.8,
+                "widowed": 5.7
+              }
+            }
+          ]
+        },
+        {
+          "name": "Offaly",
+          "population": 82668,
+          "average_age": 38.4,
+          "cities_towns": [
+            {
+              "name": "Tullamore",
+              "population": 15598,
+              "average_age": 37.9,
+              "male_population": 7650,
+              "female_population": 7948,
+              "male_children": 1650,
+              "female_children": 1580,
+              "marital_status_percentages": {
+                "single": 42.8,
+                "married": 44.1,
+                "separated": 3.1,
+                "divorced": 5.1,
+                "widowed": 4.9
+              }
+            },
+            {
+              "name": "Birr",
+              "population": 5946,
+              "average_age": 40.1,
+              "male_population": 2920,
+              "female_population": 3026,
+              "male_children": 6500,
+              "female_children": 6200,
+              "marital_status_percentages": {
+                "single": 46.3,
+                "married": 41.1,
+                "separated": 3.3,
+                "divorced": 5.1,
+                "widowed": 4.2
+              }
+            },
+            {
+              "name": "Dungarvan",
+              "population": 10081,
+              "average_age": 39.2,
+              "male_population": 4950,
+              "female_population": 5131,
+              "male_children": 1050,
+              "female_children": 1000,
+              "marital_status_percentages": {
+                "single": 37.9,
+                "married": 47.5,
+                "separated": 3.3,
+                "divorced": 5.8,
+                "widowed": 5.5
+              }
+            }
+          ]
+        },
+        {
+          "name": "Westmeath",
+          "population": 95840,
+          "average_age": 37.9,
+          "cities_towns": [
+            {
+              "name": "Athlone",
+              "population": 22869,
+              "average_age": 36.8,
+              "male_population": 11200,
+              "female_population": 11669,
+              "male_children": 2400,
+              "female_children": 2300,
+              "marital_status_percentages": {
+                "single": 46.2,
+                "married": 41.8,
+                "separated": 3.2,
+                "divorced": 4.9,
+                "widowed": 3.9
+              }
+            },
+            {
+              "name": "Mullingar",
+              "population": 22667,
+              "average_age": 37.5,
+              "male_population": 11150,
+              "female_population": 11517,
+              "male_children": 2550,
+              "female_children": 2450,
+              "marital_status_percentages": {
+                "single": 42.1,
+                "married": 44.8,
+                "separated": 3.0,
+                "divorced": 5.2,
+                "widowed": 4.9
+              }
+            },
+            {
+              "name": "Moate",
+              "population": 2785,
+              "average_age": 38.9,
+              "male_population": 1370,
+              "female_population": 1415,
+              "male_children": 315,
+              "female_children": 300,
+              "marital_status_percentages": {
+                "single": 39.8,
+                "married": 46.5,
+                "separated": 3.1,
+                "divorced": 5.4,
+                "widowed": 5.2
+              }
+            }
+          ]
+        },
+        {
+          "name": "Longford",
+          "population": 46634,
+          "average_age": 38.2,
+          "cities_towns": [
+            {
+              "name": "Longford",
+              "population": 10008,
+              "average_age": 38.6,
+              "male_population": 4900,
+              "female_population": 5108,
+              "male_children": 1050,
+              "female_children": 1000,
+              "marital_status_percentages": {
+                "single": 41.2,
+                "married": 44.3,
+                "separated": 3.2,
+                "divorced": 5.1,
+                "widowed": 6.2
+              }
+            },
+            {
+              "name": "Granard",
+              "population": 1589,
+              "average_age": 39.8,
+              "male_population": 780,
+              "female_population": 809,
+              "male_children": 175,
+              "female_children": 165,
+              "marital_status_percentages": {
+                "single": 38.9,
+                "married": 46.1,
+                "separated": 3.4,
+                "divorced": 5.8,
+                "widowed": 5.8
+              }
+            }
+          ]
+        },
+        {
+          "name": "Wexford",
+          "population": 163919,
+          "average_age": 39.1,
+          "cities_towns": [
+            {
+              "name": "Wexford",
+              "population": 21524,
+              "average_age": 38.5,
+              "male_population": 10600,
+              "female_population": 10924,
+              "male_children": 2400,
+              "female_children": 2300,
+              "marital_status_percentages": {
+                "single": 41.8,
+                "married": 44.1,
+                "separated": 3.3,
+                "divorced": 5.5,
+                "widowed": 5.3
+              }
+            },
+            {
+              "name": "Gorey",
+              "population": 9822,
+              "average_age": 37.2,
+              "male_population": 4850,
+              "female_population": 4972,
+              "male_children": 1100,
+              "female_children": 1050,
+              "marital_status_percentages": {
+                "single": 39.5,
+                "married": 46.8,
+                "separated": 3.1,
+                "divorced": 5.2,
+                "widowed": 5.4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Munster",
+      "population": 1373346,
+      "counties": [
+        {
+          "name": "Cork",
+          "population": 584156,
+          "average_age": 37.8,
+          "cities_towns": [
+            {
+              "name": "Cork City",
+              "population": 222526,
+              "average_age": 36.2,
+              "male_population": 109500,
+              "female_population": 113026,
+              "male_children": 22000,
+              "female_children": 21000,
+              "marital_status_percentages": {
+                "single": 51.9,
+                "married": 37.2,
+                "separated": 3.1,
+                "divorced": 4.5,
+                "widowed": 3.3
+              }
+            },
+            {
+              "name": "Carrigaline",
+              "population": 18239,
+              "average_age": 35.4,
+              "male_population": 9000,
+              "female_population": 9239,
+              "male_children": 2000,
+              "female_children": 1950,
+              "marital_status_percentages": {
+                "single": 34.8,
+                "married": 52.1,
+                "separated": 2.7,
+                "divorced": 4.2,
+                "widowed": 6.2
+              }
+            },
+            {
+              "name": "Cobh",
+              "population": 14148,
+              "average_age": 38.1,
+              "male_population": 6950,
+              "female_population": 7198,
+              "male_children": 1500,
+              "female_children": 1450,
+              "marital_status_percentages": {
+                "single": 37.2,
+                "married": 48.1,
+                "separated": 3.1,
+                "divorced": 5.4,
+                "widowed": 6.2
+              }
+            },
+            {
+              "name": "Mallow",
+              "population": 12459,
+              "average_age": 38.5,
+              "male_population": 6100,
+              "female_population": 6359,
+              "male_children": 1350,
+              "female_children": 1300,
+              "marital_status_percentages": {
+                "single": 39.8,
+                "married": 45.2,
+                "separated": 3.2,
+                "divorced": 5.8,
+                "widowed": 6.0
+              }
+            },
+            {
+              "name": "Midleton",
+              "population": 12496,
+              "average_age": 37.2,
+              "male_population": 6150,
+              "female_population": 6346,
+              "male_children": 1400,
+              "female_children": 1350,
+              "marital_status_percentages": {
+                "single": 36.5,
+                "married": 49.8,
+                "separated": 3.0,
+                "divorced": 5.2,
+                "widowed": 5.5
+              }
+            }
+          ]
+        },
+        {
+          "name": "Kerry",
+          "population": 156458,
+          "average_age": 40.2,
+          "cities_towns": [
+            {
+              "name": "Tralee",
+              "population": 26176,
+              "average_age": 39.1,
+              "male_population": 12900,
+              "female_population": 13276,
+              "male_children": 2800,
+              "female_children": 2650,
+              "marital_status_percentages": {
+                "single": 44.2,
+                "married": 42.8,
+                "separated": 3.2,
+                "divorced": 5.4,
+                "widowed": 4.4
+              }
+            },
+            {
+              "name": "Killarney",
+              "population": 15504,
+              "average_age": 37.8,
+              "male_population": 7600,
+              "female_population": 7904,
+              "male_children": 1650,
+              "female_children": 1580,
+              "marital_status_percentages": {
+                "single": 41.5,
+                "married": 44.2,
+                "separated": 3.1,
+                "divorced": 5.8,
+                "widowed": 5.4
+              }
+            },
+            {
+              "name": "Listowel",
+              "population": 4820,
+              "average_age": 40.8,
+              "male_population": 2370,
+              "female_population": 2450,
+              "male_children": 535,
+              "female_children": 510,
+              "marital_status_percentages": {
+                "single": 38.5,
+                "married": 46.8,
+                "separated": 3.4,
+                "divorced": 5.9,
+                "widowed": 5.4
+              }
+            },
+            {
+              "name": "Cahersiveen",
+              "population": 1294,
+              "average_age": 42.1,
+              "male_population": 635,
+              "female_population": 659,
+              "male_children": 145,
+              "female_children": 140,
+              "marital_status_percentages": {
+                "single": 35.8,
+                "married": 48.2,
+                "separated": 3.6,
+                "divorced": 6.2,
+                "widowed": 6.2
+              }
+            }
+          ]
+        },
+        {
+          "name": "Limerick",
+          "population": 209536,
+          "average_age": 37.9,
+          "cities_towns": [
+            {
+              "name": "Limerick City",
+              "population": 102287,
+              "average_age": 36.8,
+              "male_population": 50500,
+              "female_population": 51787,
+              "male_children": 11200,
+              "female_children": 10700,
+              "marital_status_percentages": {
+                "single": 48.7,
+                "married": 39.2,
+                "separated": 3.4,
+                "divorced": 4.8,
+                "widowed": 3.9
+              }
+            },
+            {
+              "name": "Newcastle West",
+              "population": 6619,
+              "average_age": 39.4,
+              "male_population": 3250,
+              "female_population": 3369,
+              "male_children": 735,
+              "female_children": 705,
+              "marital_status_percentages": {
+                "single": 37.8,
+                "married": 47.2,
+                "separated": 3.4,
+                "divorced": 5.9,
+                "widowed": 5.7
+              }
+            },
+            {
+              "name": "Rathkeale",
+              "population": 1845,
+              "average_age": 38.7,
+              "male_population": 905,
+              "female_population": 940,
+              "male_children": 205,
+              "female_children": 195,
+              "marital_status_percentages": {
+                "single": 39.2,
+                "married": 46.1,
+                "separated": 3.5,
+                "divorced": 5.8,
+                "widowed": 5.4
+              }
+            }
+          ]
+        },
+        {
+          "name": "Clare",
+          "population": 127938,
+          "average_age": 38.9,
+          "cities_towns": [
+            {
+              "name": "Ennis",
+              "population": 27923,
+              "average_age": 37.4,
+              "male_population": 13700,
+              "female_population": 14223,
+              "male_children": 3100,
+              "female_children": 2950,
+              "marital_status_percentages": {
+                "single": 42.8,
+                "married": 44.1,
+                "separated": 3.0,
+                "divorced": 5.2,
+                "widowed": 4.9
+              }
+            },
+            {
+              "name": "Shannon",
+              "population": 10256,
+              "average_age": 36.2,
+              "male_population": 5100,
+              "female_population": 5156,
+              "male_children": 1150,
+              "female_children": 1100,
+              "marital_status_percentages": {
+                "single": 44.1,
+                "married": 42.8,
+                "separated": 3.1,
+                "divorced": 5.2,
+                "widowed": 4.8
+              }
+            },
+            {
+              "name": "Kilrush",
+              "population": 2719,
+              "average_age": 41.5,
+              "male_population": 1335,
+              "female_population": 1384,
+              "male_children": 300,
+              "female_children": 285,
+              "marital_status_percentages": {
+                "single": 36.2,
+                "married": 47.8,
+                "separated": 3.5,
+                "divorced": 6.1,
+                "widowed": 6.4
+              }
+            },
+            {
+              "name": "Ennistymon",
+              "population": 1137,
+              "average_age": 39.8,
+              "male_population": 560,
+              "female_population": 577,
+              "male_children": 125,
+              "female_children": 120,
+              "marital_status_percentages": {
+                "single": 38.5,
+                "married": 46.2,
+                "separated": 3.4,
+                "divorced": 5.8,
+                "widowed": 6.1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tipperary",
+          "population": 167895,
+          "average_age": 39.1,
+          "cities_towns": [
+            {
+              "name": "Clonmel",
+              "population": 18369,
+              "average_age": 39.3,
+              "male_population": 9000,
+              "female_population": 9369,
+              "male_children": 1900,
+              "female_children": 1850,
+              "marital_status_percentages": {
+                "single": 40.5,
+                "married": 45.2,
+                "separated": 3.4,
+                "divorced": 5.8,
+                "widowed": 5.1
+              }
+            },
+            {
+              "name": "Thurles",
+              "population": 9196,
+              "average_age": 40.2,
+              "male_population": 4500,
+              "female_population": 4696,
+              "male_children": 1000,
+              "female_children": 950,
+              "marital_status_percentages": {
+                "single": 38.9,
+                "married": 46.5,
+                "separated": 3.3,
+                "divorced": 5.7,
+                "widowed": 5.6
+              }
+            },
+            {
+              "name": "Nenagh",
+              "population": 9347,
+              "average_age": 39.8,
+              "male_population": 4580,
+              "female_population": 4767,
+              "male_children": 1025,
+              "female_children": 980,
+              "marital_status_percentages": {
+                "single": 39.4,
+                "married": 45.8,
+                "separated": 3.2,
+                "divorced": 5.9,
+                "widowed": 5.7
+              }
+            }
+          ]
+        },
+        {
+          "name": "Waterford",
+          "population": 167895,
+          "average_age": 39.1,
+          "cities_towns": [
+            {
+              "name": "Waterford City",
+              "population": 53713,
+              "average_age": 38.5,
+              "male_population": 26400,
+              "female_population": 27313,
+              "male_children": 5280,
+              "female_children": 5100,
+              "marital_status_percentages": {
+                "single": 42.1,
+                "married": 43.8,
+                "separated": 3.2,
+                "divorced": 6.1,
+                "widowed": 4.8
+              }
+            },
+            {
+              "name": "Tramore",
+              "population": 11277,
+              "average_age": 39.8,
+              "male_population": 5520,
+              "female_population": 5757,
+              "male_children": 1100,
+              "female_children": 1065,
+              "marital_status_percentages": {
+                "single": 38.5,
+                "married": 47.2,
+                "separated": 3.4,
+                "divorced": 5.8,
+                "widowed": 5.1
+              }
+            },
+            {
+              "name": "Dungarvan",
+              "population": 10081,
+              "average_age": 41.2,
+              "male_population": 4920,
+              "female_population": 5161,
+              "male_children": 980,
+              "female_children": 945,
+              "marital_status_percentages": {
+                "single": 37.8,
+                "married": 48.5,
+                "separated": 3.1,
+                "divorced": 5.4,
+                "widowed": 5.2
+              }
+            },
+            {
+              "name": "Lismore",
+              "population": 1375,
+              "average_age": 42.3,
+              "male_population": 675,
+              "female_population": 700,
+              "male_children": 135,
+              "female_children": 130,
+              "marital_status_percentages": {
+                "single": 35.2,
+                "married": 50.1,
+                "separated": 3.5,
+                "divorced": 4.8,
+                "widowed": 6.4
+              }
+            },
+            {
+              "name": "Cappoquin",
+              "population": 865,
+              "average_age": 43.1,
+              "male_population": 425,
+              "female_population": 440,
+              "male_children": 85,
+              "female_children": 80,
+              "marital_status_percentages": {
+                "single": 33.8,
+                "married": 51.2,
+                "separated": 3.2,
+                "divorced": 4.6,
+                "widowed": 7.2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Connacht",
+      "population": 581947,
+      "counties": [
+        {
+          "name": "Galway",
+          "population": 276451,
+          "average_age": 37.8,
+          "cities_towns": [
+            {
+              "name": "Galway City",
+              "population": 85910,
+              "average_age": 34.2,
+              "male_population": 42200,
+              "female_population": 43710,
+              "male_children": 8900,
+              "female_children": 8500,
+              "marital_status_percentages": {
+                "single": 57.8,
+                "married": 32.1,
+                "separated": 2.8,
+                "divorced": 4.2,
+                "widowed": 3.1
+              }
+            },
+            {
+              "name": "Tuam",
+              "population": 8767,
+              "average_age": 38.9,
+              "male_population": 4300,
+              "female_population": 4467,
+              "male_children": 975,
+              "female_children": 925,
+              "marital_status_percentages": {
+                "single": 40.2,
+                "married": 45.8,
+                "separated": 3.1,
+                "divorced": 5.4,
+                "widowed": 5.5
+              }
+            }
+          ]
+        },
+        {
+          "name": "Mayo",
+          "population": 137231,
+          "average_age": 41.2,
+          "cities_towns": [
+            {
+              "name": "Castlebar",
+              "population": 13054,
+              "average_age": 37.8,
+              "male_population": 6400,
+              "female_population": 6654,
+              "male_children": 1400,
+              "female_children": 1350,
+              "marital_status_percentages": {
+                "single": 41.2,
+                "married": 44.8,
+                "separated": 3.1,
+                "divorced": 5.2,
+                "widowed": 5.7
+              }
+            },
+            {
+              "name": "Ballina",
+              "population": 10556,
+              "average_age": 39.4,
+              "male_population": 5150,
+              "female_population": 5406,
+              "male_children": 1100,
+              "female_children": 1050,
+              "marital_status_percentages": {
+                "single": 38.7,
+                "married": 46.8,
+                "separated": 3.4,
+                "divorced": 5.2,
+                "widowed": 5.9
+              }
+            }
+          ]
+        },
+        {
+          "name": "Roscommon",
+          "population": 69490,
+          "average_age": 42.1,
+          "cities_towns": [
+            {
+              "name": "Roscommon",
+              "population": 5876,
+              "average_age": 41.8,
+              "male_population": 2900,
+              "female_population": 2976,
+              "male_children": 650,
+              "female_children": 625,
+              "marital_status_percentages": {
+                "single": 35.8,
+                "married": 48.2,
+                "separated": 3.2,
+                "divorced": 6.1,
+                "widowed": 6.7
+              }
+            },
+            {
+              "name": "Boyle",
+              "population": 2568,
+              "average_age": 43.2,
+              "male_population": 1260,
+              "female_population": 1308,
+              "male_children": 285,
+              "female_children": 270,
+              "marital_status_percentages": {
+                "single": 33.5,
+                "married": 49.8,
+                "separated": 3.5,
+                "divorced": 6.8,
+                "widowed": 6.4
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sligo",
+          "population": 70198,
+          "average_age": 40.5,
+          "cities_towns": [
+            {
+              "name": "Sligo",
+              "population": 20008,
+              "average_age": 38.2,
+              "male_population": 9800,
+              "female_population": 10208,
+              "male_children": 2200,
+              "female_children": 2100,
+              "marital_status_percentages": {
+                "single": 45.1,
+                "married": 42.2,
+                "separated": 3.2,
+                "divorced": 5.5,
+                "widowed": 4.0
+              }
+            },
+            {
+              "name": "Enniscrone",
+              "population": 1015,
+              "average_age": 42.8,
+              "male_population": 495,
+              "female_population": 520,
+              "male_children": 115,
+              "female_children": 110,
+              "marital_status_percentages": {
+                "single": 32.1,
+                "married": 51.2,
+                "separated": 3.8,
+                "divorced": 6.5,
+                "widowed": 6.4
+              }
+            }
+          ]
+        },
+        {
+          "name": "Leitrim",
+          "population": 35087,
+          "average_age": 43.8,
+          "cities_towns": [
+            {
+              "name": "Carrick-on-Shannon",
+              "population": 4062,
+              "average_age": 41.5,
+              "male_population": 2000,
+              "female_population": 2062,
+              "male_children": 450,
+              "female_children": 430,
+              "marital_status_percentages": {
+                "single": 36.8,
+                "married": 47.2,
+                "separated": 3.4,
+                "divorced": 6.1,
+                "widowed": 6.5
+              }
+            },
+            {
+              "name": "Manorhamilton",
+              "population": 1758,
+              "average_age": 44.2,
+              "male_population": 865,
+              "female_population": 893,
+              "male_children": 195,
+              "female_children": 185,
+              "marital_status_percentages": {
+                "single": 34.2,
+                "married": 48.8,
+                "separated": 3.6,
+                "divorced": 6.8,
+                "widowed": 6.6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ulster",
+      "population": 335854,
+      "counties": [
+        {
+          "name": "Donegal",
+          "population": 166706,
+          "average_age": 40.8,
+          "cities_towns": [
+            {
+              "name": "Letterkenny",
+              "population": 19588,
+              "average_age": 37.8,
+              "male_population": 9600,
+              "female_population": 9988,
+              "male_children": 2150,
+              "female_children": 2050,
+              "marital_status_percentages": {
+                "single": 44.8,
+                "married": 42.1,
+                "separated": 3.3,
+                "divorced": 5.2,
+                "widowed": 4.6
+              }
+            },
+            {
+              "name": "Buncrana",
+              "population": 6971,
+              "average_age": 39.5,
+              "male_population": 3420,
+              "female_population": 3551,
+              "male_children": 775,
+              "female_children": 740,
+              "marital_status_percentages": {
+                "single": 40.8,
+                "married": 45.2,
+                "separated": 3.4,
+                "divorced": 5.8,
+                "widowed": 4.8
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cavan",
+          "population": 81704,
+          "average_age": 38.9,
+          "cities_towns": [
+            {
+              "name": "Cavan",
+              "population": 11741,
+              "average_age": 37.8,
+              "male_population": 5750,
+              "female_population": 5991,
+              "male_children": 1250,
+              "female_children": 1200,
+              "marital_status_percentages": {
+                "single": 39.8,
+                "married": 46.1,
+                "separated": 3.2,
+                "divorced": 5.1,
+                "widowed": 5.8
+              }
+            },
+            {
+              "name": "Bailieborough",
+              "population": 2683,
+              "average_age": 40.2,
+              "male_population": 1320,
+              "female_population": 1363,
+              "male_children": 300,
+              "female_children": 285,
+              "marital_status_percentages": {
+                "single": 36.8,
+                "married": 47.8,
+                "separated": 3.4,
+                "divorced": 5.9,
+                "widowed": 6.1
+              }
+            }
+          ]
+        },
+        {
+          "name": "Monaghan",
+          "population": 65444,
+          "average_age": 39.2,
+          "cities_towns": [
+            {
+              "name": "Monaghan",
+              "population": 7678,
+              "average_age": 38.5,
+              "male_population": 3770,
+              "female_population": 3908,
+              "male_children": 850,
+              "female_children": 815,
+              "marital_status_percentages": {
+                "single": 38.9,
+                "married": 46.8,
+                "separated": 3.3,
+                "divorced": 5.4,
+                "widowed": 5.6
+              }
+            },
+            {
+              "name": "Castleblayney",
+              "population": 3607,
+              "average_age": 39.8,
+              "male_population": 1770,
+              "female_population": 1837,
+              "male_children": 400,
+              "female_children": 385,
+              "marital_status_percentages": {
+                "single": 37.2,
+                "married": 47.5,
+                "separated": 3.5,
+                "divorced": 6.1,
+                "widowed": 5.7
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

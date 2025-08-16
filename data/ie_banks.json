@@ -1,0 +1,186 @@
+[
+  {
+    "id": "IE-AIB-001",
+    "name": "Allied Irish Banks, p.l.c.",
+    "country": "Ireland",
+    "swift_code": "AIBKIE2D",
+    "bicfi_code": "AIBKIE2D",
+    "iban_structure": "IE29AIBK931152",
+    "card_network": [
+      {"name": "Visa",       "value": 0.7},
+      {"name": "Mastercard", "value": 0.3}
+    ],
+    "headquarters": {
+      "address": "10 Molesworth Street, Dublin 2",
+      "city": "Dublin",
+      "post_code": "D02 R126"
+    },
+    "branches": [
+      {
+        "branch_id": "AIB-Dublin-01",
+        "branch_name": "Grafton Street Branch",
+        "location": {
+          "address": "90 Grafton Street, Dublin 2",
+          "city": "Dublin",
+          "province": "Leinster",
+          "county": "Dublin",
+          "latitude": 53.3429,
+          "longitude": -6.2625
+        },
+        "bicfi_code": "AIBKIE2D"
+      },
+      {
+        "branch_id": "AIB-Cork-01",
+        "branch_name": "Cork City Branch",
+        "location": {
+          "address": "66 South Mall, Cork",
+          "city": "Cork",
+          "province": "Munster",
+          "county": "Cork",
+          "latitude": 51.8967,
+          "longitude": -8.4735
+        },
+        "bicfi_code": "AIBKIE2D"
+      }
+    ]
+  },
+  {
+    "id": "IE-BOI-001",
+    "name": "Bank of Ireland",
+    "country": "Ireland",
+    "swift_code": "BOFIIE2D",
+    "bicfi_code": "BOFIIE2D",
+    "iban_structure": "IE79BOFI905838",
+    "card_network": [
+      {"name": "Visa",       "value": 0.6},
+      {"name": "Mastercard", "value": 0.4}
+    ],
+    "headquarters": {
+      "address": "40 Mespil Road, Dublin 4",
+      "city": "Dublin",
+      "post_code": "D04 T835"
+    },
+    "branches": [
+      {
+        "branch_id": "BOI-Dublin-01",
+        "branch_name": "College Green Branch",
+        "location": {
+          "address": "2 College Green, Dublin 2",
+          "city": "Dublin",
+          "province": "Leinster",
+          "county": "Dublin",
+          "latitude": 53.3444,
+          "longitude": -6.2603
+        },
+        "bicfi_code": "BOFIIE2D"
+      },
+      {
+        "branch_id": "BOI-Galway-01",
+        "branch_name": "Eyre Square Branch",
+        "location": {
+          "address": "Eyre Square, Galway",
+          "city": "Galway",
+          "province": "Connacht",
+          "county": "Galway",
+          "latitude": 53.2743,
+          "longitude": -9.0519
+        },
+        "bicfi_code": "BOFIIE2D"
+      }
+    ]
+  },
+  {
+    "id": "IE-PTSB-001",
+    "name": "Permanent TSB",
+    "country": "Ireland",
+    "swift_code": "IPBSIE2D",
+    "bicfi_code": "IPBSIE2D",
+    "iban_structure": "IE55IPBS990602",
+    "card_network": [
+      {"name": "Visa",       "value": 1}
+    ],
+    "headquarters": {
+      "address": "56-59 St. Stephen’s Green, Dublin 2",
+      "city": "Dublin",
+      "post_code": "D02 H530"
+    },
+    "branches": [
+      {
+        "branch_id": "PTSB-Dublin-01",
+        "branch_name": "St. Stephen's Green Branch",
+        "location": {
+          "address": "56-59 St. Stephen’s Green, Dublin 2",
+          "city": "Dublin",
+          "province": "Leinster",
+          "county": "Dublin"
+        },
+        "bicfi_code": "IPBSIE2D"
+      },
+      {
+        "branch_id": "PTSB-Limerick-01",
+        "branch_name": "Limerick Branch",
+        "location": {
+          "address": "15 O'Connell Street, Limerick",
+          "city": "Limerick",
+          "province": "Munster",
+          "county": "Limerick"
+        },
+        "bicfi_code": "IPBSIE2D"
+      }
+    ]
+  },
+  {
+    "id": "IE-CBI-001",
+    "name": "Citibank Europe plc",
+    "country": "Ireland",
+    "swift_code": "CITIIE2X",
+    "bicfi_code": "CITIIE2X",
+    "iban_structure": "IE53CITI990033",
+    "card_network": [
+      {"name": "Visa",       "value": 0.8},
+      {"name": "Mastercard", "value": 0.2}
+    ],
+    "headquarters": {
+      "address": "1 North Wall Quay, Dublin 1",
+      "city": "Dublin",
+      "post_code": "D01 T8Y1"
+    },
+    "branches": []
+  },
+  {
+    "id": "IE-BAR-001",
+    "name": "Barclays Bank Ireland plc",
+    "country": "Ireland",
+    "swift_code": "BARCIE2D",
+    "bicfi_code": "BARCIE2D",
+    "iban_structure": "IE19BARC901004",
+    "card_network": [
+      {"name": "Visa",       "value": 0.55},
+      {"name": "Mastercard", "value": 0.45}
+    ],
+    "headquarters": {
+      "address": "One Molesworth Street, Dublin 2",
+      "city": "Dublin",
+      "post_code": "D02 RF29"
+    },
+    "branches": []
+  },
+  {
+    "id": "IE-BOA-001",
+    "name": "Bank of America Europe DAC",
+    "country": "Ireland",
+    "swift_code": "BOFAIE3X",
+    "bicfi_code": "BOFAIE3X",
+    "iban_structure": "IE58BOFA990061",
+    "card_network": [
+      {"name": "Visa",       "value": 0.8},
+      {"name": "Mastercard", "value": 0.2}
+    ],
+    "headquarters": {
+      "address": "Two Park Place, Hatch Street, Dublin 2",
+      "city": "Dublin",
+      "post_code": "D02 NP94"
+    },
+    "branches": []
+  }
+]

@@ -1,0 +1,6 @@
+faker       
+random-username 
+pymongo
+psycopg2-binary
+numpy
+redis

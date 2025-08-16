@@ -1,0 +1,103 @@
+version: '3.8'
+
+services:
+  # Redis Server with SSL support
+  redis-server:
+    image: redis:7-alpine
+    container_name: redis-ssl-server
+    ports:
+      - "6379:6379"    # Standard Redis port
+      - "6380:6380"    # SSL Redis port
+    volumes:
+      # Mount certificate files
+      - ./ssl/certs:/etc/ssl/certs:ro
+      - ./ssl/private:/etc/ssl/private:ro
+      # Redis configuration
+      - ./conf/redis.conf:/usr/local/etc/redis/redis.conf:ro
+      # Data persistence
+      - ./data/redis:/data
+    command: >
+      redis-server /usr/local/etc/redis/redis.conf
+      --requirepass ${REDIS_PASSWORD}
+      --port 6379
+      --tls-port 6380
+      --tls-cert-file /etc/ssl/certs/redis-server.crt
+      --tls-key-file /etc/ssl/private/redis-server.key
+      --tls-ca-cert-file /etc/ssl/certs/ca-bundle.crt
+      --tls-auth-clients yes
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    networks:
+      - redis-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--tls", "--cert", "/etc/ssl/certs/redis-server.crt", "--key", "/etc/ssl/private/redis-server.key", "--cacert", "/etc/ssl/certs/ca-bundle.crt", "-p", "6380", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Your Python application
+  your-python-app:
+    build: .
+    container_name: python-redis-client
+    depends_on:
+      - redis-server
+    volumes:
+      # Mount client certificates
+      - ./ssl/client:/app/ssl/client:ro
+    environment:
+      # Redis Connection Settings
+      - REDIS_HOST=redis-server
+      - REDIS_PORT=6380
+      - REDIS_DB=0
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      
+      # SSL Configuration
+      - REDIS_SSL=true
+      - REDIS_SSL_VERIFY=true
+      - REDIS_SSL_CA_CERT=/app/ssl/client/ca-bundle.crt
+      - REDIS_SSL_CLIENT_CERT=/app/ssl/client/client.crt
+      - REDIS_SSL_CLIENT_KEY=/app/ssl/client/client.key
+      
+      # MongoDB Settings (if you're using both)
+      - MONGO_ROOT=mongodb
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+      - MONGO_DATASTORE=${MONGO_DATABASE}
+      - MONGO_USERNAME=${MONGO_USERNAME}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+      - MONGO_DIRECT=directConnection=true
+      
+      # PostgreSQL Settings (if you're using both)
+      - POSTGRES_HOST=postgresql
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      
+      # Application Settings
+      - LOG_LEVEL=DEBUG
+      - ENVIRONMENT=development
+    networks:
+      - redis-network
+    restart: unless-stopped
+
+  # Optional: Redis Insight for monitoring (Web UI)
+  redis-insight:
+    image: redislabs/redisinsight:latest
+    container_name: redis-insight
+    ports:
+      - "8001:8001"
+    volumes:
+      - redis_insight_data:/db
+    environment:
+      - RIPORT=8001
+    networks:
+      - redis-network
+    restart: unless-stopped
+
+
+
+
+networks:
+  redis-network:
+    driver: bridge

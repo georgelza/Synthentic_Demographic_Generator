@@ -113,8 +113,7 @@ For the curious. There is `DBPerformance.md` and the associated `database_perfor
 This only covered the MongoDB and Postgress datastores, did this prior to adding Redis which was a good 75% faster on my local machine.
 
 
-By:
-George Leonard
-georgelza@gmail.com
-https://www.linkedin.com/in/george-leonard-945b502/
-https://medium.com/@georgelza
+By: **George Leonard**
+- [georgelza@gmail.com](georgelza@gmail.com)
+- [LinkedIn Profile](https://www.linkedin.com/in/george-leonard-945b502/)
+- [Medium Profile](https://medium.com/@georgelza)

@@ -71,6 +71,7 @@ Below are some of the data structures used along the way, Aadditionally also see
 
 
 **Children:**
+```
     Name
     Surname
     Genders
@@ -79,23 +80,27 @@ Below are some of the data structures used along the way, Aadditionally also see
     Father 
     Mother
     Address
+```
 
-
+```
 **Family's:**
     Husband
     Wife
     Kids
     Address
+```
 
-
+```
 **Addresses:**
     Provinces
         Counties
             Towns/Cities
                 Streets
                 Postal Code
+```
 
 **Banks:**
+```
     Name
     BIGFI
     SWIFT
@@ -105,7 +110,7 @@ Below are some of the data structures used along the way, Aadditionally also see
         Transaction
         Cheque
         Notice
-
+```
 
 ### Misc:
 

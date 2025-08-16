@@ -53,13 +53,15 @@ To run the Generator, execute (from root directory):
 - `run.sh` will use `.pws` for passwords etc. 
 
 
-### Data structures used:
+## Data structures used:
 
 Below are some of the data structures used along the way, Aadditionally also see the `app/option_lists.py` for various structures and weightings, which drives how the data is distributed/selected at a not so exactly random bases.
 
 
 **Adults:**
+
 ```
+    _id
     Name
     Surname
     Genders
@@ -71,8 +73,11 @@ Below are some of the data structures used along the way, Aadditionally also see
     Address
 ```
 
+
 **Children:**
+
 ```
+    _id
     Name
     Surname
     Genders
@@ -81,11 +86,14 @@ Below are some of the data structures used along the way, Aadditionally also see
     Father 
     Mother
     Address
+    family_id
 ```
 
 
 **Family's:**
+
 ```
+    _id
     Husband
     Wife
     Kids
@@ -94,26 +102,75 @@ Below are some of the data structures used along the way, Aadditionally also see
 
 
 **Addresses:**
+
+- This is used as a sub structure in the above
+
 ```
-    Provinces
-        Counties
-            Towns/Cities
-                Streets
-                Postal Code
+    Country
+        Provinces
+            Counties
+                Towns/Cities
+                    Streets
+                    Postal Code
 ```
 
+
+**Account:**
+
+- This is used as a sub structure in the above
+  
+```
+    Bank detail
+    or 
+    Credit Card detail
+```
+
+
 **Banks:**
+
+- This is the main file defining our banks, for Ireland it is the 3 primarily National Banks and then 3 international banks with major presence, components of it is extracted and used in the structures above.
+  
+See: `data/ie_banks.json`
+
 ```
     Name
     BIGFI
     SWIFT
     IBAN Prefix
+    ...
     Account Types
         Saving
         Transaction
         Cheque
         Notice
+        ...
 ```
+
+
+**ireland.json**
+
+- This is used to get the various provices, which contain multiple counties which contain multiple cities/towns, each with a name and a population and additional information.
+  
+For a full structure See: `data/ireland.json` for entire structure.
+```
+    Name
+    Population
+    ...
+    Provinces
+        Name
+        Population
+        ...
+        Counties
+            Name
+            Population
+            ...
+            Towns/Cities
+                Name
+                Population
+                ...
+
+```
+
 
 ### Misc:
 

@@ -12,9 +12,9 @@ Everything starts with brining up the base environment first and then the App.
 
 NOTE: those that follow my blogs, I've discovered a bug in my logger function which has been fixed here, the file_level and console_levels has also been aligned with standards.
 
-BLOG: []()
+BLOG: [Synthentic Demographic Data Generator]()
 
-GIT REPO: []()
+GIT REPO: [Synthentic_Demographic_Generator](https://github.com/georgelza/Synthentic_Demographic_Generator.git)
 
 
 **The base environment:**

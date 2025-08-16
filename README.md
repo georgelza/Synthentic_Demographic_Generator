@@ -25,12 +25,14 @@ GIT REPO: [Synthentic_Demographic_Generator](https://github.com/georgelza/Synthe
 
 - `devlab/Makefile`
 
-For more detail how to stand up the entire environment see the below **The App:**.
+For more detail how to stand up the entire environment see the below **Running the App:**.
 
 
-## The App:
+## Running the App:
 
-To run the Generator, execute (from root directory):
+To run the Generator, execute the following from root directory:
+
+For more information re it's structure see `app/README.md`.
 
 - `python3 -m venv ./venv`
 

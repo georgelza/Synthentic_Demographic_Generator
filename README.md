@@ -12,7 +12,7 @@ Everything starts with brining up the base environment first and then the App.
 
 NOTE: those that follow my blogs, I've discovered a bug in my logger function which has been fixed here, the file_level and console_levels has also been aligned with standards.
 
-BLOG: [Synthetic Demographic Population Data Generator]()
+BLOG: [Synthetic Demographic Population Data Generator](https://medium.com/@georgelza/synthetic-demographic-population-data-generator-3e6e526d7b9a)
 
 GIT REPO: [Synthentic_Demographic_Generator](https://github.com/georgelza/Synthentic_Demographic_Generator.git)
 

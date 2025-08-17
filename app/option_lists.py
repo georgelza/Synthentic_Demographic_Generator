@@ -159,8 +159,3 @@ age_distribution = [
     {"name": 60, "value": 0.16, "count": 823862},
     {"name": 70, "value": 0.11, "count": 566405}
 ]
-
-xage_distribution = [
-    {"name": 20, "value": 0.17, "count": 875353},
-    {"name": 30, "value": 0.20, "count": 1029827},
-]

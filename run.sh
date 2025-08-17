@@ -3,14 +3,14 @@
 . ./.pws
 
 #export LOCALE=zu_ZA
-export LOCALE=en_IE
-export COUNTRY=Ireland
-export ECHOCONFIG=1
-export ECHORECORDS=0
-export RECCAP=50000                 
-export BLOCKSIZE=10
+export LOCALE=en_IE                             # used by faker to localise the name/surnames and addresses generated.
+export COUNTRY=Ireland                          # Just used as the country tag in our address structure.
+export ECHOCONFIG=1                             # Print to screen our current values as per this file, might make sense to have this as it goes into the log files.
+export ECHORECORDS=0                            # If you want to see everything fly by, this will slow things down!!!
+export RECCAP=5000000                           # If we're playing around and want to cap the records per age bracket, per day.      
+export BLOCKSIZE=10                             # Age block size, 20-30 and 30-40 or 20-25 and 25-30
 export BATCHSIZE=400
-export RECCAP=9999999999999999999999           # Record Cap per Execution Block, if this number is > than BATCHSIZE then the batch will complete.
+export RECCAP=9999999999999999999999            # Record Cap per Execution Block, if this number is > than BATCHSIZE then the batch will complete.
 #export RECCAP=300
 # Setting it to this impossible number will make it load the entire file, otherwise we will add logic to exit out at the number specified.
 
@@ -24,12 +24,12 @@ export FILE_DEBUGLEVEL=20                       # File Handler
 # logging.DEBUG: 10
 # logging.NOTSET: 0
 
-export LOGDIR=logs
-export DATADIR=data
+export LOGDIR=logs                              # The log files is a concat of the database and the date/time.
+export DATADIR=data                             # directy off root where these seed data files will be found
 export DATASEEDFILE=ireland.json
 export BANKSEEDFILE=ie_banks.json
 
-export AGE_GAP=19
+export AGE_GAP=19                               # This drives the approx age difference between the mother and the children.
 export VARIATION=2.5
 export VARIATION_PERC=12                        # 12 = .12 = 12%
 

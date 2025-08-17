@@ -12,7 +12,7 @@ Everything starts with brining up the base environment first and then the App.
 
 NOTE: those that follow my blogs, I've discovered a bug in my logger function which has been fixed here, the file_level and console_levels has also been aligned with standards.
 
-BLOG: [Synthentic Demographic Data Generator]()
+BLOG: [Synthetic Demographic Population Data Generator]()
 
 GIT REPO: [Synthentic_Demographic_Generator](https://github.com/georgelza/Synthentic_Demographic_Generator.git)
 
@@ -75,6 +75,46 @@ Below are some of the data structures used along the way, Aadditionally also see
     Address
 ```
 
+Example:
+```
+{
+    "_id": "fa0a58a1-3fb9-4dc4-950d-27c96caad683",
+    "name": "Lisa-Marie",
+    "surname": "Hearty",
+    "uniqueId": "1915492K",
+    "gender": "F",
+    "dob": "55/11/24",
+    "marital_status": "Widowed",
+    "partner": "5687475E",
+    "status": "Deceased",
+    "account": [
+        {
+            "bank": "Allied Irish Banks, p.l.c.",
+            "bicfi_code": "AIBKIE2D",
+            "swift_code": "AIBKIE2D",
+            "accountNumber": "IE29AIBK93115289539755",
+            "accountType": "Savings/Deposit"
+        },
+        {
+            "card_holder": "L Hearty",
+            "card_number": "4223843492070632",
+            "exp_date": "11/25",
+            "card_network": "Visa",
+            "issuing_bank": "Permanent TSB"
+        }
+    ],
+    "address": {
+        "street": "39 Fitzpatrick Street Street",
+        "town": "Limerick City",
+        "county": "Limerick",
+        "state": "Munster",
+        "post_code": "X348394",
+        "country": "Ireland"
+    },
+    "family_id": "344de5a9-fa58-4947-b887-73996047a228"
+}
+
+```
 
 **Children:**
 
@@ -91,6 +131,28 @@ Below are some of the data structures used along the way, Aadditionally also see
     family_id
 ```
 
+Example:
+```
+{
+    "_id": "1b09d0fe-e57d-46a9-8be1-5f077abe33a2",
+    "name": "Lewis",
+    "surname": "O'Gara",
+    "gender": "Male",
+    "dob": "83/12/18",
+    "uniqueId": "9144598B",
+    "father_idNumber": "1395127Q",
+    "mother_idNumber": "6997438K",
+    "address": {
+        "street": "59 Jackson Street Street",
+        "town": "Fingal",
+        "county": "Dublin",
+        "state": "Leinster",
+        "post_code": "E28 9K1C",
+        "country": "Ireland"
+    },
+    "family_id": "c86bee1d-0b57-4dc4-abef-9215ecc0cb4c"
+}
+```
 
 **Family's:**
 
@@ -102,6 +164,122 @@ Below are some of the data structures used along the way, Aadditionally also see
     Address
 ```
 
+Example:
+```
+{
+    "_id": "4004db21-05a7-4524-a990-1aa0203a0c24",
+    "husband": {
+        "name": "Oran",
+        "surname": "Hardiman",
+        "uniqueId": "6455409D",
+        "gender": "M",
+        "dob": "54/09/15",
+        "marital_status": "Married",
+        "partner": "4486096P",
+        "status": "Living",
+        "account": [
+            {
+                "bank": "Bank of Ireland",
+                "bicfi_code": "BOFIIE2D",
+                "swift_code": "BOFIIE2D",
+                "accountNumber": "IE79BOFI90583835990934",
+                "accountType": "Current Accounts"
+            },
+            {
+                "bank": "Barclays Bank Ireland plc",
+                "bicfi_code": "BARCIE2D",
+                "swift_code": "BARCIE2D",
+                "accountNumber": "IE19BARC90100417221297",
+                "accountType": "Current Accounts"
+            },
+            {
+                "bank": "Citibank Europe plc",
+                "bicfi_code": "CITIIE2X",
+                "swift_code": "CITIIE2X",
+                "accountNumber": "IE53CITI99003336666053",
+                "accountType": "Current Accounts"
+            },
+            {
+                "bank": "Bank of Ireland",
+                "bicfi_code": "BOFIIE2D",
+                "swift_code": "BOFIIE2D",
+                "accountNumber": "IE79BOFI90583879228923",
+                "accountType": "Current Accounts"
+            },
+            {
+                "bank": "Allied Irish Banks, p.l.c.",
+                "bicfi_code": "AIBKIE2D",
+                "swift_code": "AIBKIE2D",
+                "accountNumber": "IE29AIBK93115217364160",
+                "accountType": "Current Accounts"
+            },
+            {
+                "bank": "Barclays Bank Ireland plc",
+                "bicfi_code": "BARCIE2D",
+                "swift_code": "BARCIE2D",
+                "accountNumber": "IE19BARC90100495214836",
+                "accountType": "Business Accounts"
+            },
+            {
+                "card_holder": "O Hardiman",
+                "card_number": "4295106831188124",
+                "exp_date": "11/25",
+                "card_network": "Visa",
+                "issuing_bank": "Allied Irish Banks, p.l.c."
+            }
+        ]
+    },
+    "wife": {
+        "name": "Paula",
+        "surname": "Hardiman",
+        "uniqueId": "4486096P",
+        "gender": "F",
+        "dob": "57/12/22",
+        "marital_status": "Married",
+        "partner": "6455409D",
+        "status": "Living",
+        "account": [
+            {
+                "bank": "Bank of America Europe DAC",
+                "bicfi_code": "BOFAIE3X",
+                "swift_code": "BOFAIE3X",
+                "accountNumber": "IE58BOFA99006105822922",
+                "accountType": "Savings/Deposit"
+            },
+            {
+                "bank": "Bank of Ireland",
+                "bicfi_code": "BOFIIE2D",
+                "swift_code": "BOFIIE2D",
+                "accountNumber": "IE79BOFI90583844975923",
+                "accountType": "Current Accounts"
+            },
+            {
+                "card_holder": "P Hardiman",
+                "card_number": "4197997192488510",
+                "exp_date": "11/25",
+                "card_network": "Visa",
+                "issuing_bank": "Permanent TSB"
+            },
+            {
+                "card_holder": "P Hardiman",
+                "card_number": "4341141958700744",
+                "exp_date": "08/27",
+                "card_network": "Visa",
+                "issuing_bank": "Permanent TSB"
+            }
+        ]
+    },
+    "address": {
+        "street": "78 Moy Street Street",
+        "town": "Limerick City",
+        "county": "Limerick",
+        "state": "Munster",
+        "post_code": "C98FCAC",
+        "country": "Ireland"
+    }
+}
+
+```
 
 **Addresses:**
 
@@ -115,7 +293,18 @@ Below are some of the data structures used along the way, Aadditionally also see
                     Streets
                     Postal Code
 ```
+Example:
+```
+{
+    "street": "78 Moy Street Street",
+    "town": "Limerick City",
+    "county": "Limerick",
+    "state": "Munster",
+    "post_code": "C98FCAC",
+    "country": "Ireland"
+}
 
+```
 
 **Account:**
 
@@ -127,6 +316,41 @@ Below are some of the data structures used along the way, Aadditionally also see
     Credit Card detail
 ```
 
+Example
+
+```
+[
+    {
+        "bank": "Bank of America Europe DAC",
+        "bicfi_code": "BOFAIE3X",
+        "swift_code": "BOFAIE3X",
+        "accountNumber": "IE58BOFA99006105822922",
+        "accountType": "Savings/Deposit"
+    },
+    {
+        "bank": "Bank of Ireland",
+        "bicfi_code": "BOFIIE2D",
+        "swift_code": "BOFIIE2D",
+        "accountNumber": "IE79BOFI90583844975923",
+        "accountType": "Current Accounts"
+    },
+    {
+        "card_holder": "P Hardiman",
+        "card_number": "4197997192488510",
+        "exp_date": "11/25",
+        "card_network": "Visa",
+        "issuing_bank": "Permanent TSB"
+    },
+    {
+        "card_holder": "P Hardiman",
+        "card_number": "4341141958700744",
+        "exp_date": "08/27",
+        "card_network": "Visa",
+        "issuing_bank": "Permanent TSB"
+    }
+]
+
+```
 
 **Banks:**
 

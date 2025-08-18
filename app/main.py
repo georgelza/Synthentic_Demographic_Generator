@@ -47,32 +47,44 @@ def getDataStoreConnection(config_params, mylogger):
         1 - MongoDB
         2 - PostgreSQL
         3 - Redis
-        4 - ... ? ... ;)
+        4 - Kafka
+        5 - ... Future ...
     """    
 
-    db_connection = None
+    persist_connection = None
     try:
         if config_params["DEST"] == 1:    # MongoDB
-            db_connection = DatabaseManager.create_connection('mongodb',    config_params, mylogger)
-            db_connection.connect()
+            persist_connection = DatabaseManager.create_connection('mongodb',    config_params, mylogger)
+            persist_connection.connect()
             
         elif config_params["DEST"] == 2:  # PostgreSQL
-            db_connection = DatabaseManager.create_connection('postgresql', config_params, mylogger)
-            db_connection.connect()
+            persist_connection = DatabaseManager.create_connection('postgresql', config_params, mylogger)
+            persist_connection.connect()
 
         elif config_params["DEST"] == 3:  # Redis
-            db_connection = DatabaseManager.create_connection('redis',      config_params, mylogger)
-            db_connection.connect()
+            persist_connection = DatabaseManager.create_connection('redis',      config_params, mylogger)
+            persist_connection.connect()
             
+        elif config_params["DEST"] == 4:  # Kafka
+
+            persist_connection = DatabaseManager.create_connection('kafka',      config_params, mylogger)
+            # The connect method for KafkaConnection now handles retries internally
+            persist_connection.connect()
+        
         else:
-            raise ValueError(f"Invalid database destination: {config_params['DEST']}")
-            
+            raise ValueError(f"Invalid persistent store destination: {config_params['DEST']}")
+
     except (DatabaseConnectionError, ValueError) as err:
-        mylogger.error('Failed to setup database connection: {err}'.format(
-            err = err
-        ))        
-        #end try
-    return db_connection
+        mylogger.error('Failed to setup persistent store connection: {conn} Error: {err}'.format(
+            conn = config_params['DEST'],
+            err  = err
+        ))
+
+                # Important: if connection fails, persist_connection might be None or not connected.
+        # The calling function (generate_population) should handle this.
+            
+    #end try
+    return persist_connection
 #end getDataStoreConnection
 
 
@@ -92,8 +104,8 @@ def generate_population(config_params, mylogger):
         step1starttime  = datetime.now()
         step1start      = perf_counter()
 
-        db_connection   = getDataStoreConnection(config_params, mylogger)        
-        
+        persist_connection = getDataStoreConnection(config_params, mylogger)        
+
         step1endtime    = datetime.now()
         step1end        = perf_counter()
         step1time       = round((step1end - step1start),2)        
@@ -523,44 +535,57 @@ def generate_population(config_params, mylogger):
                 try:
                     if config_params["DEST"] == 1:     # Post to MongoDB
                         if len(arAdults) > 0:
-                            result = db_connection.insert_multiple(arAdults, collection_name=config_params["MONGO_ADULTS_COLLECTION"])
+                            result = persist_connection.insert(arAdults, store_name=config_params["ADULTS_STORE"])
                         
                         #end if 
                         if len(arChildren) > 0:
-                            result = db_connection.insert_multiple(arChildren, collection_name=config_params["MONGO_CHILDREN_COLLECTION"])
+                            result = persist_connection.insert(arChildren, store_name=config_params["CHILDREN_STORE"])
                         
                         #end if 
                         if len(arFamilies) > 0:
-                            result = db_connection.insert_multiple(arFamilies, collection_name=config_params["MONGO_FAMILY_COLLECTION"])
+                            result = persist_connection.insert(arFamilies, store_name=config_params["FAMILY_STORE"])
 
                         #end if 
                     elif config_params["DEST"] == 2:   # Post to PostgreSQL
                         if len(arAdults) > 0:
-                            result = db_connection.insert_multiple(arAdults, table_name="adults", extract_unique_id=True)
+                            result = persist_connection.insert(arAdults, store_name=config_params["ADULTS_STORE"], extract_unique_id=True)
                         
                         #end if 
                         if len(arChildren) > 0:
-                            result = db_connection.insert_multiple(arChildren, table_name="children", extract_unique_id=True)
+                            result = persist_connection.insert(arChildren, store_name=config_params["CHILDREN_STORE"], extract_unique_id=True)
                         
                         #end if 
                         if len(arFamilies) > 0:
-                            result = db_connection.insert_multiple(arFamilies, table_name="families", extract_unique_id=False)
+                            result = persist_connection.insert(arFamilies, store_name=config_params["FAMILY_STORE"], extract_unique_id=False)
                             
                         #end if 
                             
                     elif config_params["DEST"] == 3:   # Post to Redis
                         if len(arAdults) > 0:
-                            result = db_connection.insert_multiple(arAdults, collection_name="adults", key_field="uniqueId")
+                            result = persist_connection.insert(arAdults, store_name=config_params["ADULTS_STORE"], key_field="uniqueId")        # PPS/IDNumber/SSN
                         
                         #end if 
                         if len(arChildren) > 0:
-                            result = db_connection.insert_multiple(arChildren, collection_name="children", key_field="uniqueId")
+                            result = persist_connection.insert(arChildren, store_name=config_params["CHILDREN_STORE"], key_field="uniqueId")    # PPS/IDNumber/SSN
                         
                         #end if 
                         if len(arFamilies) > 0:
-                            result = db_connection.insert_multiple(arFamilies, collection_name="families", key_field="_id")
+                            result = persist_connection.insert(arFamilies, store_name=config_params["FAMILY_STORE"], key_field="_id")           # UUID used to Id the family
 
                         #end if 
+                    elif config_params["DEST"] == 4:   # Post to Kafka
+                        if len(arAdults) > 0:
+                            result = persist_connection.insert(arAdults, store_name=config_params["ADULTS_STORE"], key="uniqueId")              # ?
+                        
+                        #end if 
+                        if len(arChildren) > 0:
+                            result = persist_connection.insert(arChildren, store_name=config_params["CHILDREN_STORE"], key="uniqueId")          # ?
+                        
+                        #end if 
+                        if len(arFamilies) > 0:
+                            result = persist_connection.insert(arFamilies, store_name=config_params["FAMILY_STORE"], key="_id")                 # ?
+
+                        #end if                     
                     #end if           
                 except DatabaseOperationError as err:
                     mylogger.error("Database operation failed during flush: {dest} - {err}".format(
@@ -618,8 +643,8 @@ def generate_population(config_params, mylogger):
         
         # Cleanup database connection
         try:
-            if db_connection:
-                db_connection.disconnect()
+            if persist_connection:
+                persist_connection.disconnect()
 
         except Exception as err:
             mylogger.error("Error disconnecting from database: {err}".format(
@@ -666,7 +691,9 @@ if __name__ == '__main__':
         
         runTime                      = str(datetime.now().strftime("%Y-%m-%d_%H:%M:%S"))
         config_params["LOGGINGFILE"] = config_params["LOGGINGFILE"] + "_" + runTime
-        logger_instance            = mylogger(config_params["LOGGINGFILE"] + "_common.log", config_params["CONSOLE_DEBUGLEVEL"], config_params["FILE_DEBUGLEVEL"])
+        logger_instance              = mylogger(config_params["LOGGINGFILE"] + "_common.log", 
+                                                config_params["CONSOLE_DEBUGLEVEL"], 
+                                                config_params["FILE_DEBUGLEVEL"])
 
         echo_config(config_params, logger_instance)
 

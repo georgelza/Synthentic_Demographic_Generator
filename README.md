@@ -6,7 +6,7 @@ And it simply grew from there (aka another Rabbit Hole).
 
 To make sure I don't trip over anyony locally looking, having problems I modelled the currently example as per Ireland. But if you look at the data folder, containing `data/ie_banks.json` and `data/ireland.json` you will realise it wont take much to model to your own locale.
 
-At the moment this version will post data directly into either a PostgreSQL or MongoDB datastore. That is intentional, based on personal requirements, but sure it can be extended to cover other db's or even Kafka cluster or other options.
+At the moment this version will post data directly into either a PostgreSQL or MongoDB datastore. That is intentional, based on personal requirements, but sure it can be extended to cover other db's or even Kafka cluster or other options. -> edit: I added Kafka as a persistent store 18/082025.
 
 Everything starts with brining up the base environment first and then the App. 
 

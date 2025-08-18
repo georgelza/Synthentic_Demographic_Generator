@@ -39,32 +39,21 @@ def getConfigs():
     
     config_params = {}
     # General
-    config_params["ECHOCONFIG"]         = int(os.environ["ECHOCONFIG"])
-    config_params["ECHORECORDS"]        = int(os.environ["ECHORECORDS"])
-    config_params["BLOCKSIZE"]          = int(os.environ["BLOCKSIZE"])
-    config_params["BATCHSIZE"]          = int(os.environ["BATCHSIZE"])
-    config_params["RECCAP"]             = int(os.environ["RECCAP"])
+    config_params["ECHOCONFIG"]             = int(os.environ["ECHOCONFIG"])
+    config_params["ECHORECORDS"]            = int(os.environ["ECHORECORDS"])
+    config_params["BLOCKSIZE"]              = int(os.environ["BLOCKSIZE"])
+    config_params["BATCHSIZE"]              = int(os.environ["BATCHSIZE"])
+    config_params["RECCAP"]                 = int(os.environ["RECCAP"])
 
-    config_params["CONSOLE_DEBUGLEVEL"] = int(os.environ["CONSOLE_DEBUGLEVEL"])
-    config_params["FILE_DEBUGLEVEL"]    = int(os.environ["FILE_DEBUGLEVEL"])
+    config_params["CONSOLE_DEBUGLEVEL"]     = int(os.environ["CONSOLE_DEBUGLEVEL"])
+    config_params["FILE_DEBUGLEVEL"]        = int(os.environ["FILE_DEBUGLEVEL"])
 
     config_params["COUNTRY"]                = os.environ["COUNTRY"]
     config_params["LOCALE"]                 = os.environ["LOCALE"]
     
     # Root of file name
     config_params["LOGDIR"]                 = os.environ["LOGDIR"]    
-    config_params["DEST"]                   = int(os.environ["DEST"])
     
-    if config_params["DEST"] == 1:
-        config_params["LOGGINGFILE"]        = os.path.join(os.environ["LOGDIR"] , "mongo")
-        
-    elif config_params["DEST"] ==2:
-        config_params["LOGGINGFILE"]        = os.path.join(os.environ["LOGDIR"] , "postgres")
-
-    elif config_params["DEST"] ==3:
-        config_params["LOGGINGFILE"]        = os.path.join(os.environ["LOGDIR"] , "redis")
-    #end if
-
     # Seed data
     config_params["DATADIR"]                = os.environ["DATADIR"]     
     config_params["DATASEEDFILE"]           = os.path.join(os.environ["DATADIR"] , os.environ["DATASEEDFILE"])
@@ -73,45 +62,63 @@ def getConfigs():
     config_params["AGE_GAP"]                = int(os.environ["AGE_GAP"])
     config_params["VARIATION"]              = float(os.environ["VARIATION"])
     config_params["VARIATION_PERC"]         = int(os.environ["VARIATION_PERC"])
-
-    # Mongo
-    config_params["MONGO_HOST"]                 = os.environ["MONGO_HOST"]
-    config_params["MONGO_PORT"]                 = os.environ["MONGO_PORT"]
-    config_params["MONGO_DIRECT"]               = os.environ["MONGO_DIRECT"]
-    config_params["MONGO_ROOT"]                 = os.environ["MONGO_ROOT"]
-    config_params["MONGO_USERNAME"]             = os.environ["MONGO_USERNAME"]
-    config_params["MONGO_PASSWORD"]             = os.environ["MONGO_PASSWORD"]
-    config_params["MONGO_DATASTORE"]            = os.environ["MONGO_DATASTORE"]
-    config_params["MONGO_ADULTS_COLLECTION"]    = os.environ["MONGO_ADULTS_COLLECTION"]
-    config_params["MONGO_CHILDREN_COLLECTION"]  = os.environ["MONGO_CHILDREN_COLLECTION"]
-    config_params["MONGO_FAMILY_COLLECTION"]    = os.environ["MONGO_FAMILY_COLLECTION"]
-
-    # PostgreSQL
-    config_params["POSTGRES_HOST"]              = os.environ["POSTGRES_HOST"]
-    config_params["POSTGRES_PORT"]              = str(os.environ["POSTGRES_PORT"])
-    config_params["POSTGRES_USER"]              = os.environ["POSTGRES_USER"]
-    config_params["POSTGRES_PASSWORD"]          = os.environ["POSTGRES_PASSWORD"]
-    config_params["POSTGRES_DB"]                = os.environ["POSTGRES_DB"]
-    config_params["POSTGRES_ADULTS_TABLE"]      = os.environ["POSTGRES_ADULTS_TABLE"]
-    config_params["POSTGRES_CHILDREN_TABLE"]    = os.environ["POSTGRES_CHILDREN_TABLE"]
-    config_params["POSTGRES_FAMILY_TABLE"]      = os.environ["POSTGRES_FAMILY_TABLE"]
-
-    # Redis
-    config_params["REDIS_HOST"]                 = os.environ["REDIS_HOST"]
-    config_params["REDIS_PORT"]                 = int(os.environ["REDIS_PORT"])
-    config_params["REDIS_DB"]                   = int(os.environ["REDIS_DB"])
-    config_params["REDIS_PASSWORD"]             = os.environ["REDIS_PASSWORD"]
     
-    if int(os.environ["REDIS_SSL"]) == 0: config_params["REDIS_SSL"] = False 
-    else: config_params["REDIS_SSL"] = True
+    config_params["DEST"]                   = int(os.environ["DEST"])
+    
+    if config_params["DEST"] == 1:
+        config_params["LOGGINGFILE"]                = os.path.join(os.environ["LOGDIR"] , "mongo")
+        config_params["MONGO_HOST"]                 = os.environ["MONGO_HOST"]
+        config_params["MONGO_PORT"]                 = os.environ["MONGO_PORT"]
+        config_params["MONGO_DIRECT"]               = os.environ["MONGO_DIRECT"]
+        config_params["MONGO_ROOT"]                 = os.environ["MONGO_ROOT"]
+        config_params["MONGO_USERNAME"]             = os.environ["MONGO_USERNAME"]
+        config_params["MONGO_PASSWORD"]             = os.environ["MONGO_PASSWORD"]
+        config_params["MONGO_DATASTORE"]            = os.environ["MONGO_DATASTORE"]
 
-    config_params["REDIS_SSL_CERT"]             = os.environ["REDIS_SSL_CERT"]
-    config_params["REDIS_SSL_KEY"]              = os.environ["REDIS_SSL_KEY"]
-    config_params["REDIS_SSL_CA"]               = os.environ["REDIS_SSL_CA"]
+        
+    elif config_params["DEST"] ==2:
+        config_params["LOGGINGFILE"]                = os.path.join(os.environ["LOGDIR"] , "postgres")
+        config_params["POSTGRES_HOST"]              = os.environ["POSTGRES_HOST"]
+        config_params["POSTGRES_PORT"]              = str(os.environ["POSTGRES_PORT"])
+        config_params["POSTGRES_USER"]              = os.environ["POSTGRES_USER"]
+        config_params["POSTGRES_PASSWORD"]          = os.environ["POSTGRES_PASSWORD"]
+        config_params["POSTGRES_DB"]                = os.environ["POSTGRES_DB"]
 
+    elif config_params["DEST"] ==3:
+        config_params["LOGGINGFILE"]                = os.path.join(os.environ["LOGDIR"] , "redis")
+        config_params["REDIS_HOST"]                 = os.environ["REDIS_HOST"]
+        config_params["REDIS_PORT"]                 = int(os.environ["REDIS_PORT"])
+        config_params["REDIS_DB"]                   = int(os.environ["REDIS_DB"])
+        config_params["REDIS_PASSWORD"]             = os.environ["REDIS_PASSWORD"]
+    
+        if int(os.environ["REDIS_SSL"]) == 0: 
+            config_params["REDIS_SSL"] = False 
+        else: 
+            print(config_params["REDIS_SSL"])
+            config_params["REDIS_SSL"] = True
+            config_params["REDIS_SSL_CERT"]         = os.environ["REDIS_SSL_CERT"]
+            config_params["REDIS_SSL_KEY"]          = os.environ["REDIS_SSL_KEY"] 
+            config_params["REDIS_SSL_CA"]           = os.environ["REDIS_SSL_CA"]
+
+    elif config_params["DEST"] ==4:
+        config_params["LOGGINGFILE"]                = os.path.join(os.environ["LOGDIR"] , "kafka")
+        config_params["BOOTSTRAP_SERVERS"]          = os.environ["KAFKA_BOOTSTRAP_SERVERS"] 
+        config_params["SCHEMAREGISTRY_SERVERS"]     = os.environ["KAFKA_SCHEMAREGISTRY_SERVERS"]
+        config_params["SECURITY_PROTOCOL"]          = os.environ["KAFKA_SECURITY_PROTOCOL"] 
+        config_params["SASL_MECHANISMS"]            = os.environ["KAFKA_SASL_MECHANISMS"] 
+        config_params["SASL_USERNAME"]              = os.environ["KAFKA_SASL_USERNAME"] 
+        config_params["SASL_PASSWORD"]              = os.environ["KAFKA_SASL_PASSWORD"] 
+        config_params["MAXRETRIES"]                 = int(os.environ["KAFKA_MAXRETRIES"])
+        config_params["DELAY"]                      = float(os.environ["KAFKA_DELAY"])
+
+    #end if
+    config_params["ADULTS_STORE"]                   = os.environ["ADULTS_STORE"] 
+    config_params["CHILDREN_STORE"]                 = os.environ["CHILDREN_STORE"] 
+    config_params["FAMILY_STORE"]                   = os.environ["FAMILY_STORE"] 
     
     return config_params
 #end getConfig
+
 
 def mylogger(filename, console_level, file_level):
 
@@ -228,9 +235,9 @@ def echo_config(config_params, mylogger):
             mylogger.info("* Mongo Port                       : " + str(config_params["MONGO_PORT"]))
             mylogger.info("* Mongo Direct                     : " + config_params["MONGO_DIRECT"])
             mylogger.info("* Mongo Datastore                  : " + config_params["MONGO_DATASTORE"])
-            mylogger.info("* Mongo Collection                 : " + config_params["MONGO_ADULTS_COLLECTION"])
-            mylogger.info("* Mongo Collection                 : " + config_params["MONGO_CHILDREN_COLLECTION"])
-            mylogger.info("* Mongo Collection                 : " + config_params["MONGO_FAMILY_COLLECTION"])
+            mylogger.info("* Mongo Adult Collection           : " + config_params["ADULTS_STORE"])
+            mylogger.info("* Mongo Children Collection        : " + config_params["CHILDREN_STORE"])
+            mylogger.info("* Mongo Families Collection        : " + config_params["FAMILY_STORE"])   
             mylogger.info("* ")
             
         elif config_params["DEST"] == 2: 
@@ -240,9 +247,9 @@ def echo_config(config_params, mylogger):
             mylogger.info("* PostgreSQL DB                    : " + config_params["POSTGRES_DB"])
             mylogger.info("* PostgreSQL User                  : " + config_params["POSTGRES_USER"])
             mylogger.info("* PostgreSQL Password              : ************" )
-            mylogger.info("* PostgreSQL Adultd                : " + config_params["POSTGRES_ADULTS_TABLE"])
-            mylogger.info("* PostgreSQL Children              : " + config_params["POSTGRES_CHILDREN_TABLE"])
-            mylogger.info("* PostgreSQL Families              : " + config_params["POSTGRES_FAMILY_TABLE"])
+            mylogger.info("* PostgreSQL Adult Table           : " + config_params["ADULTS_STORE"])
+            mylogger.info("* PostgreSQL Children Table        : " + config_params["CHILDREN_STORE"])
+            mylogger.info("* PostgreSQL Families Table        : " + config_params["FAMILY_STORE"])
 
         elif config_params["DEST"] == 3: 
             mylogger.info("* DB Dest Specified                : Redis" )
@@ -250,10 +257,28 @@ def echo_config(config_params, mylogger):
             mylogger.info("* Redis Port                       : " + str(config_params["REDIS_PORT"]))
             mylogger.info("* Redis DB                         : " + str(config_params["REDIS_DB"])) 
             mylogger.info("* Redis Password                   : ************" )
+            mylogger.info("* Redis Adult Tag                  : " + config_params["ADULTS_STORE"])
+            mylogger.info("* Redis Children Tag               : " + config_params["CHILDREN_STORE"])
+            mylogger.info("* Redis Families Tag               : " + config_params["FAMILY_STORE"])
             mylogger.info("* Redis SSL                        : " + str(config_params["REDIS_SSL"]))
-            mylogger.info("* Redis SSL Cert                   : " + config_params["REDIS_SSL_CERT"])
-            mylogger.info("* Redis SSL Key                    : " + config_params["REDIS_SSL_KEY"])
-            mylogger.info("* Redis SSL CA                     : " + config_params["REDIS_SSL_CA"])
+            if int(os.environ["REDIS_SSL"]) != 0:             
+                mylogger.info("* Redis SSL Cert                   : " + config_params["REDIS_SSL_CERT"])
+                mylogger.info("* Redis SSL Key                    : " + config_params["REDIS_SSL_KEY"])
+                mylogger.info("* Redis SSL CA                     : " + config_params["REDIS_SSL_CA"])
+            
+
+        elif config_params["DEST"] == 4: 
+            mylogger.info("* DB Dest Specified                : Kafka" )
+            mylogger.info("* Kafka Bootstrap Servers          : " + config_params["BOOTSTRAP_SERVERS"])
+            mylogger.info("* Kafka Schemaregistry servers     : " + config_params["SCHEMAREGISTRY_SERVERS"])
+            mylogger.info("* Kafka Security Protocol          : " + config_params["SECURITY_PROTOCOL"])
+            mylogger.info("* Kafka SASL Mechanisms            : " + config_params["SASL_MECHANISMS"])
+            mylogger.info("* Kafka Conn Max Retries           : " + str(config_params["MAXRETRIES"]))
+            mylogger.info("* Kafka Conn Delay/Backof          : " + str(config_params["DELAY"]))
+            
+        mylogger.info("* Adult Store                      : " + config_params["ADULTS_STORE"])
+        mylogger.info("* Children Store                   : " + config_params["CHILDREN_STORE"])
+        mylogger.info("* Families Store                   : " + config_params["FAMILY_STORE"])
 
         mylogger.info("* ")
         mylogger.info("***********************************************************")     

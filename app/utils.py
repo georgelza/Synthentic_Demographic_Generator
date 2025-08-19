@@ -43,7 +43,8 @@ def getConfigs():
     config_params["ECHORECORDS"]            = int(os.environ["ECHORECORDS"])
     config_params["BLOCKSIZE"]              = int(os.environ["BLOCKSIZE"])
     config_params["BATCHSIZE"]              = int(os.environ["BATCHSIZE"])
-    config_params["RECCAP"]                 = int(os.environ["RECCAP"])
+    config_params["AGECAP"]                 = int(os.environ["AGECAP"])
+    config_params["DAYCAP"]                 = int(os.environ["DAYCAP"])
 
     config_params["CONSOLE_DEBUGLEVEL"]     = int(os.environ["CONSOLE_DEBUGLEVEL"])
     config_params["FILE_DEBUGLEVEL"]        = int(os.environ["FILE_DEBUGLEVEL"])
@@ -217,7 +218,8 @@ def echo_config(config_params, mylogger):
         mylogger.info("* Seed Data File                   : " + config_params["DATASEEDFILE"])
         mylogger.info("* Bank Data File                   : " + config_params["BANKSEEDFILE"])
         
-        mylogger.info("* RecCap                           : " + str(config_params["RECCAP"]))
+        mylogger.info("* AgeCap                           : " + str(config_params["AGECAP"]))       # Max records for the Age block
+        mylogger.info("* DayCap                           : " + str(config_params["DAYCAP"]))       # Max records for the Day block
         mylogger.info("* Age Block Size                   : " + str(config_params["BLOCKSIZE"]))
         mylogger.info("* Batch Size                       : " + str(config_params["BATCHSIZE"]))
     

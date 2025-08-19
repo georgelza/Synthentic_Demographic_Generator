@@ -1,0 +1,81 @@
+2025-08-19 07:36:44,072 - INFO - ***********************************************************
+2025-08-19 07:36:44,072 - INFO - * 
+2025-08-19 07:36:44,072 - INFO - *          Python ....
+2025-08-19 07:36:44,072 - INFO - * 
+2025-08-19 07:36:44,072 - INFO - ***********************************************************
+2025-08-19 07:36:44,072 - INFO - * General
+2025-08-19 07:36:44,072 - INFO - * 
+2025-08-19 07:36:44,072 - INFO - * Console Debuglevel               : 20
+2025-08-19 07:36:44,072 - INFO - * File Debuglevel                  : 20
+2025-08-19 07:36:44,072 - INFO - * 
+2025-08-19 07:36:44,072 - INFO - * Locale                           : en_IE
+2025-08-19 07:36:44,073 - INFO - * Country                          : Ireland
+2025-08-19 07:36:44,073 - INFO - * Seed Data Directory              : data
+2025-08-19 07:36:44,073 - INFO - * Seed Data File                   : data/ireland.json
+2025-08-19 07:36:44,073 - INFO - * Bank Data File                   : data/ie_banks.json
+2025-08-19 07:36:44,073 - INFO - * AgeCap                           : 1000
+2025-08-19 07:36:44,073 - INFO - * DayCap                           : 300
+2025-08-19 07:36:44,073 - INFO - * Age Block Size                   : 10
+2025-08-19 07:36:44,073 - INFO - * Batch Size                       : 500
+2025-08-19 07:36:44,073 - INFO - * 
+2025-08-19 07:36:44,073 - INFO - * Log Directory                    : logs
+2025-08-19 07:36:44,073 - INFO - * Log File                         : logs/kafka_2025-08-19_07:36:44
+2025-08-19 07:36:44,073 - INFO - * 
+2025-08-19 07:36:44,073 - INFO - * DB Dest Specified                : 4
+2025-08-19 07:36:44,073 - INFO - * DB Dest Specified                : Kafka
+2025-08-19 07:36:44,073 - INFO - * Kafka Bootstrap Servers          : localhost:9092
+2025-08-19 07:36:44,073 - INFO - * Kafka Schemaregistry servers     : http://localhost:9081
+2025-08-19 07:36:44,073 - INFO - * Kafka Security Protocol          : PLAINTEXT
+2025-08-19 07:36:44,073 - INFO - * Kafka SASL Mechanisms            : PLAIN
+2025-08-19 07:36:44,073 - INFO - * Kafka Conn Max Retries           : 4
+2025-08-19 07:36:44,073 - INFO - * Kafka Conn Delay/Backof          : 0.25
+2025-08-19 07:36:44,073 - INFO - * Adult Store                      : adults
+2025-08-19 07:36:44,073 - INFO - * Children Store                   : children
+2025-08-19 07:36:44,073 - INFO - * Families Store                   : families
+2025-08-19 07:36:44,073 - INFO - * 
+2025-08-19 07:36:44,073 - INFO - ***********************************************************
+2025-08-19 07:36:44,073 - INFO - 
+2025-08-19 07:36:44,073 - INFO - STARTING run, logfile => logs/kafka_2025-08-19_07:36:44
+2025-08-19 07:36:44,073 - INFO - Attempting Kafka connection (0.25)...
+2025-08-19 07:36:44,102 - INFO - Kafka producer connection established to: localhost:9092
+2025-08-19 07:36:44,123 - INFO - Successfully loaded geographic data from data/ireland.json
+2025-08-19 07:36:44,123 - INFO - Loaded data for Republic of Ireland with 4 provinces
+2025-08-19 07:36:44,123 - INFO - Successfully loaded bank data from data/ie_banks.json
+2025-08-19 07:36:44,125 - INFO - Creating 875353 people for age bracket 20-30 across 1750 dates in batches of 500
+2025-08-19 07:36:44,185 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.06 for 95/08/18: Adults 253, Children 48, Families 82, Total 301
+2025-08-19 07:36:44,224 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 95/08/24: Adults 230, Children 71, Families 79, Total 301
+2025-08-19 07:36:44,265 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 95/08/27: Adults 231, Children 71, Families 81, Total 302
+2025-08-19 07:36:44,311 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.05 for 95/09/02: Adults 241, Children 60, Families 82, Total 301
+2025-08-19 07:36:44,311 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.19 for Age Bracket 20 - 30: Adults 955, Children 250, Families 324, Total 1205
+2025-08-19 07:36:44,312 - INFO - Creating 1029827 people for age bracket 30-40 across 2059 dates in batches of 500
+2025-08-19 07:36:44,356 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 85/08/22: Adults 252, Children 49, Families 86, Total 301
+2025-08-19 07:36:44,400 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 85/08/25: Adults 244, Children 57, Families 89, Total 301
+2025-08-19 07:36:44,444 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 85/08/31: Adults 241, Children 61, Families 79, Total 302
+2025-08-19 07:36:44,487 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 85/08/30: Adults 256, Children 47, Families 82, Total 303
+2025-08-19 07:36:44,487 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.18 for Age Bracket 30 - 40: Adults 993, Children 214, Families 336, Total 1207
+2025-08-19 07:36:44,488 - INFO - Creating 875353 people for age bracket 40-50 across 1750 dates in batches of 500
+2025-08-19 07:36:44,531 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 75/08/17: Adults 237, Children 64, Families 80, Total 301
+2025-08-19 07:36:44,574 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 75/08/16: Adults 228, Children 74, Families 77, Total 302
+2025-08-19 07:36:44,614 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 75/08/18: Adults 250, Children 51, Families 81, Total 301
+2025-08-19 07:36:44,657 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 75/08/22: Adults 234, Children 70, Families 81, Total 304
+2025-08-19 07:36:44,658 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.17 for Age Bracket 40 - 50: Adults 949, Children 259, Families 319, Total 1208
+2025-08-19 07:36:44,659 - INFO - Creating 978336 people for age bracket 50-60 across 1956 dates in batches of 500
+2025-08-19 07:36:44,702 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 65/08/23: Adults 244, Children 58, Families 75, Total 302
+2025-08-19 07:36:44,744 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 65/08/22: Adults 244, Children 57, Families 79, Total 301
+2025-08-19 07:36:44,786 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 65/08/20: Adults 242, Children 59, Families 81, Total 301
+2025-08-19 07:36:44,829 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 65/08/21: Adults 238, Children 65, Families 77, Total 303
+2025-08-19 07:36:44,830 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.17 for Age Bracket 50 - 60: Adults 968, Children 239, Families 312, Total 1207
+2025-08-19 07:36:44,831 - INFO - Creating 823862 people for age bracket 60-70 across 1647 dates in batches of 500
+2025-08-19 07:36:44,872 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 55/08/22: Adults 229, Children 72, Families 77, Total 301
+2025-08-19 07:36:44,912 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 55/08/28: Adults 208, Children 93, Families 73, Total 301
+2025-08-19 07:36:44,956 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.04 for 55/08/26: Adults 237, Children 69, Families 80, Total 306
+2025-08-19 07:36:45,002 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:45 Rt:0.05 for 55/09/03: Adults 249, Children 52, Families 82, Total 301
+2025-08-19 07:36:45,003 - INFO - Record Flushed - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:45 Rt:0.17 for Age Bracket 60 - 70: Adults 923, Children 286, Families 312, Total 1209
+2025-08-19 07:36:45,003 - INFO - Creating 566405 people for age bracket 70-80 across 1132 dates in batches of 500
+2025-08-19 07:36:45,052 - INFO - Record Flushed - St:2025-08-19 07:36:45 Et:2025-08-19 07:36:45 Rt:0.05 for 45/08/26: Adults 245, Children 56, Families 88, Total 301
+2025-08-19 07:36:45,097 - INFO - Record Flushed - St:2025-08-19 07:36:45 Et:2025-08-19 07:36:45 Rt:0.04 for 45/08/28: Adults 243, Children 59, Families 88, Total 302
+2025-08-19 07:36:45,139 - INFO - Record Flushed - St:2025-08-19 07:36:45 Et:2025-08-19 07:36:45 Rt:0.04 for 45/08/29: Adults 232, Children 69, Families 79, Total 301
+2025-08-19 07:36:45,177 - INFO - Record Flushed - St:2025-08-19 07:36:45 Et:2025-08-19 07:36:45 Rt:0.04 for 45/08/29: Adults 229, Children 75, Families 82, Total 304
+2025-08-19 07:36:45,177 - INFO - Record Flushed - St:2025-08-19 07:36:45 Et:2025-08-19 07:36:45 Rt:0.17 for Age Bracket 70 - 80: Adults 949, Children 259, Families 337, Total 1208
+2025-08-19 07:36:45,177 - INFO - Population DB Connect  - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:44 Rt:0.03
+2025-08-19 07:36:45,177 - INFO - Population Generate    - St:2025-08-19 07:36:44 Et:2025-08-19 07:36:45 Rt:1.1 Adults: 5737 Children: 1507 Families:1940 Recs:7244 Rate:6585.45 rec/sec

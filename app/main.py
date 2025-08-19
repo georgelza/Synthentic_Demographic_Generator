@@ -194,7 +194,7 @@ def generate_population(config_params, mylogger):
             # Loop over the pre-selected dates instead of every single day
             for dob_date in selected_dates:
                 
-                if cntTotalBlock > config_params["RECCAP"]:
+                if cntTotalBlock > config_params["AGECAP"]:             # Block = Age Cap
                     break
                 
                 # Per day execution timer
@@ -219,7 +219,7 @@ def generate_population(config_params, mylogger):
                 # Inner loop: create the batch of people for this single, pre-selected date
                 while n < batch_size:
                     
-                    if n > config_params["RECCAP"]:
+                    if n > config_params["DAYCAP"]:
                         break
                     
                     # if n > config_params["RECCAP"]:

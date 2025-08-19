@@ -10,9 +10,8 @@ export ECHORECORDS=0                            # If you want to see everything 
 export RECCAP=5000000                           # If we're playing around and want to cap the records per age bracket, per day.      
 export BLOCKSIZE=10                             # Age block size, 20-30 and 30-40 or 20-25 and 25-30
 export BATCHSIZE=400
-export AGECAP=1000                               # Record Cap per Age Block, if this number is > than BATCHSIZE then the batch will complete.
+export AGECAP=1000                              # Record Cap per Age Block, if this number is > than BATCHSIZE then the batch will complete.
 export DAYCAP=500                               # Record Cap per Day/Datw, if this number is > than BATCHSIZE then the batch will complete.
-#export RECCAP=300
 # Setting it to this impossible number will make it load the entire file, otherwise we will add logic to exit out at the number specified.
 
 

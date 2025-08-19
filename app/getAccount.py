@@ -40,6 +40,7 @@ def createBankAccount(fake, init, surname):
             "bank":             bank_record["name"],
             "bicfi_code":       bank_record["bicfi_code"],
             "swift_code":       bank_record["swift_code"],
+            "iban_structure":   bank_record["iban_structure"],          # Basically our unique bank id/reference
             "accountNumber":    genAccount,
             "accountType":      WeightedRandomSelector(accountTypes_options, scale=1).get_random()
         }
@@ -79,11 +80,12 @@ def createCCAccount(fake, init, surname, arAccounts):
             ccNum = fake.unique.credit_card_number(card_type='diners')
         
         card = {
-            "card_holder":   f"{init} {surname}",
-            "card_number":   ccNum,
-            "exp_date":      fake.exp_date(),
-            "card_network":  cardNetwork,
-            "issuing_bank":  bank_name
+            "card_holder":      f"{init} {surname}",
+            "card_number":      ccNum,
+            "exp_date":         fake.exp_date(),
+            "card_network":     cardNetwork,
+            "issuing_bank":     bank_name,
+            "iban_structure":   bank_record["iban_structure"],          # Basically our unique bank id/reference
         }    
     
         arAccounts.append(card)
